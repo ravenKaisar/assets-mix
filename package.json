@@ -1,0 +1,39 @@
+{
+  "name": "asset-mix",
+  "version": "1.0.2",
+  "description": "All JS & CSS file compile",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravenKaisar/assets-mix.git"
+  },
+  "keywords": [
+    "asset-mix",
+    "laravel-mix",
+    "js-compile",
+    "css-compile"
+  ],
+  "author": "Shohidullah Kaisar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravenKaisar/assets-mix/issues"
+  },
+  "homepage": "https://github.com/ravenKaisar/assets-mix#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^2.1.11",
+    "popper.js": "^1.14.3"
+  }
+}
